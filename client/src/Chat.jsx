@@ -25,7 +25,7 @@ export default function Chat() {
     connectToWs();
   }, []);
   function connectToWs() {
-    const ws = new WebSocket("ws://localhost:4040");
+    const ws = new WebSocket("https://my-chat-app-1-592a.onrender.com");
     setWs(ws);
     ws.addEventListener("message", handleMessage)
     ws.addEventListener("close", () => {
